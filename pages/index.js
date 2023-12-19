@@ -18,8 +18,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub, IoLogoWebComponent, IoLogoLinkedin } from 'react-icons/io5'
-import thumbYouTube from '../public/images/works/neoinfo.png'
-import thumbInkdrop from '../public/images/works/neodigi.png'
+import thumbYouTube from '../public/images/neoinfo.jpg'
+import thumbInkdrop from '../public/images/neodigi.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
