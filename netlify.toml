@@ -1,0 +1,4 @@
+[build]
+  command = "npm run build" # Change this to your build script
+  functions = "lambda"      # If you have serverless functions
+  publish = "dist"          # The directory to deploy
