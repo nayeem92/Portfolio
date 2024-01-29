@@ -80,6 +80,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
         Welcome to my professional portfolio! I am Nayeem, a passionate Data Science enthusiast with a flair for sports data analytics. 
+        My journey is characterized by a deep-seated interest in creating impactful sports data analytics projects. Currently pursuing a post-graduate certification at Humber College
+        in Canada, I am poised to graduate and transition into a role as a Data Analyst/Data Scientist.
         As the proud owner of &quot;
           <Link
             as={NextLink}
@@ -90,9 +92,7 @@ const Home = () => (
             Neo Digitron
           </Link>
           &quot;, a successful Social Media Management Agency based in Bangladesh, I currently lead a dynamic team of three professionals and remotely collaborate
-        with esteemed clients such as the Bangladesh Food Safety Authority. My journey is characterized 
-        by a deep-seated interest in creating impactful sports data analytics projects. Currently pursuing a post-graduate certification at Humber College
-        in Canada, I am poised to graduate and transition into a role as a Data Analyst/Data Scientist. Looking ahead, my vision involves not only furthering
+        with esteemed clients such as the Bangladesh Food Safety Authority. Looking ahead, my vision involves not only furthering
         my career in data science but also expanding my agency to attract a broader clientele. Join me on this exciting journey where data meets innovation, creating
         a compelling narrative in the evolving landscape of the digital world.
         </Paragraph>
@@ -114,12 +114,16 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2000</BioYear>
-          Born in Dhaka (ঢাকা), Bangladesh.
+          <BioYear>2023</BioYear>
+          Completed the Bachelor&apos;s Program in Computer Science and Engineering at Islamic University of Technology (IUT)
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Completed the Bachelor&apos;s Program in Computer Science and Engineering at Islamic University of Technology (IUT)
+          Founded Neo Digitron and Started working as a Social Media Analyst at Bangladesh Food Safety Authority (BFSA) (Contractual)
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Started working at Odin Protections as an Information Technology Analyst (Part-time)
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
