@@ -15,7 +15,7 @@
       "function": {
         "incrementCounter": {
           "deploymentBucketName": "amplify-portfolio-dev-a0083-deployment",
-          "s3Key": "amplify-builds/incrementCounter-475662785338624b6478-build.zip"
+          "s3Key": "amplify-builds/incrementCounter-7a5257424a5134657269-build.zip"
         }
       },
       "api": {
