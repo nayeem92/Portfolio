@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+urllib3 = "<2.0.0"  # Downgrade to a compatible version
 
 [dev-packages]
 
