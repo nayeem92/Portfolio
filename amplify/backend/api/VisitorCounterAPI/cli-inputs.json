@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/counter": {
+      "name": "/counter",
+      "lambdaFunction": "incrementCounter",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

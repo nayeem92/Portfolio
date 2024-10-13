@@ -1,0 +1,49 @@
+{
+  "api": {
+    "VisitorCounterAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "incrementCounter"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "incrementCounter": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_incrementCounter_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "incrementCounter"
+        }
+      ]
+    },
+    "AMPLIFY_function_incrementCounter_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "incrementCounter"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "VisitorCounter": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}
