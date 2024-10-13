@@ -7,10 +7,6 @@ import thumbPortfolio from '../public/images/works/bfsa.png'
 import thumbHowToUseInkdrop from '../public/images/works/scott.png'
 import thumbFishWorkflow from '../public/images/works/humber.png'
 import thumbMyDeskSetup from '../public/images/works/grad.png'
-import thumb500PaidUsers from '../public/images/works/raptors.png'
-import thumbFinancialGoal from '../public/images/works/ice.png'
-import thumbHowToPriceYourself from '../public/images/works/messi.jpg'
-import thumb50xFaster from '../public/images/works/rom.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -44,35 +40,6 @@ const Posts = () => (
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.3}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="A new era: Darko Rajakovic brings fresh energy to the Toronto Raptors"
-            thumbnail={thumb500PaidUsers}
-            href="https://neoinfosphere.com/a-new-era-darko-rajakovic-brings-fresh-energy-to-the-toronto-raptors/"
-          />
-          <GridItem
-            title="Senators vs. Lightning: Tarasenko’s impact and lightning’s goalie situation"
-            thumbnail={thumbFinancialGoal}
-            href="https://neoinfosphere.com/senators-vs-lightning-tarasenkos-impact-and-lightnings-goalie-situation/"
-          />
-        </SimpleGrid>
-      </Section>
-
-      <Section delay={0.5}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="Inter Miami vs. Toronto FC: Lionel Messi’s impact and unbeaten streak on display"
-            thumbnail={thumbHowToPriceYourself}
-            href="https://neoinfosphere.com/inter-miami-vs-toronto-fc-lionel-messis-impact-and-unbeaten-streak-on-display/"
-          />
-          <GridItem
-            title="The Love match – a heartfelt Bangladeshi-American rom-com"
-            thumbnail={thumb50xFaster}
-            href="https://neoinfosphere.com/the-love-match-a-heartfelt-bangladeshi-american-rom-com/"
-          />
-        </SimpleGrid>
-      </Section>
     </Container>
   </Layout>
 )

@@ -12,6 +12,9 @@ import thumbModeTokyo from '../public/images/works/nli2.png'
 import thumbPichu2 from '../public/images/works/tab1.png'
 import thumbFreeDBTagger from '../public/images/works/football.png'
 import thumbAmembo from '../public/images/works/php1.png'
+import mlsimage from '../public/images/works/mls-match.png';
+
+
 
 const Works = () => (
   <Layout title="Works">
@@ -21,15 +24,22 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+          <WorkGridItem id="mls-match" title="MLS Match Analysis" thumbnail={mlsimage}>
+          Dissecting a winning team&apos;;s passing game: Inter Miami vs Toronto FC.
+          </WorkGridItem>
+        </Section>
+
+
         <Section>
-          <WorkGridItem id="inkdrop" title="Player Finder" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="player-finder" title="Player Finder" thumbnail={thumbInkdrop}>
           A cloud-based application using machine learning clustering for player similarity identification in English Premier League.
           </WorkGridItem>
         </Section>
 
         <Section>
           <WorkGridItem
-            id="walknote"
+            id="facebook-page-analysis"
             title="Facebook Page Analysis"
             thumbnail={thumbWalknote}
           >
@@ -40,7 +50,7 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
+            id="blacklist"
             title="Black List"
             thumbnail={thumbFourPainters}
           >
@@ -49,7 +59,7 @@ const Works = () => (
         </Section>
 
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Kevin Debruyne Similarity">
+          <WorkGridItem id="kdb" thumbnail={thumbMenkiki} title="Kevin Debruyne Similarity">
             Our Idea is to run a clustering model on a dataset to find out players with similar playing style as Kevin DeBruyne.
           </WorkGridItem>
         </Section>
@@ -65,7 +75,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="margelo" thumbnail={thumbMargelo} title="U&I Fitness (Student Project)">
+          <WorkGridItem id="ui-fitness" thumbnail={thumbMargelo} title="U&I Fitness (Student Project)">
           A fitness website where one can gain awareness on physical health, a balanced and nutritious diet along with maintaining good mental health.
 
           </WorkGridItem>
@@ -73,7 +83,7 @@ const Works = () => (
 
         <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
+            id="bengali-dataset"
             thumbnail={thumbModeTokyo}
             title="Bengali NLI Dataset"
           >
@@ -93,14 +103,14 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Tablueau Visualization">
+          <WorkGridItem id="tableau" thumbnail={thumbPichu2} title="Tablueau Visualization">
           Used SQL to query stats and Tablueau to visualize Erling Haaland stats.
           </WorkGridItem>
         </Section>
 
         <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
+            id="football-quiz"
             thumbnail={thumbFreeDBTagger}
             title="Football Quiz App"
           >
@@ -109,11 +119,19 @@ const Works = () => (
         </Section>
         
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="OTP Login/Signup/Forgot password">
+          <WorkGridItem id="otp-login" thumbnail={thumbAmembo} title="OTP Login/Signup/Forgot password">
             
             This repository hosts a demo site on XAMPP, demonstrating essential features such as registration, verification, login, logout, and password management.
           </WorkGridItem>
         </Section>
+        <Section delay={0.6}>
+          <WorkGridItem id="test" thumbnail={thumbAmembo} title="Test">
+            
+            Test
+          </WorkGridItem>
+        </Section>
+        
+
       </SimpleGrid>
     </Container>
   </Layout>

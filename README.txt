@@ -1,1 +1,0 @@
-Detroit Become Human CONNOR by purakito on Thingiverse: https://www.thingiverse.com/thing:3520912

@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
@@ -16,10 +15,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub, IoLogoWebComponent, IoLogoLinkedin } from 'react-icons/io5'
-import thumbYouTube from '../public/images/neoinfo.jpg'
-import thumbInkdrop from '../public/images/neodigi.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -37,7 +33,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a Data Science Enthusiast based in Canada!
+        Hello, I&apos;m a Data Enthusiast transitioning into Cloud Computing! 🌩️
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Abdun Nayeem Khan
           </Heading>
-          <p>Data Analyst (Student)</p>
+          <p>Post Grad Student</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,22 +75,8 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-        Welcome to my professional portfolio! I am Nayeem, a passionate Data Science enthusiast with a flair for sports data analytics. 
-        My journey is characterized by a deep-seated interest in creating impactful sports data analytics projects. Currently pursuing a post-graduate certification at Humber College
-        in Canada, I am poised to graduate and transition into a role as a Data Analyst/Data Scientist.
-        As the proud owner of &quot;
-          <Link
-            as={NextLink}
-            href="https://www.linkedin.com/company/neo-digitron/"
-            passHref
-            target="_blank"
-          >
-            Neo Digitron
-          </Link>
-          &quot;, a successful Social Media Management Agency based in Bangladesh, I currently lead a dynamic team of three professionals and remotely collaborate
-        with esteemed clients such as the Bangladesh Food Safety Authority. Looking ahead, my vision involves not only furthering
-        my career in data science but also expanding my agency to attract a broader clientele. Join me on this exciting journey where data meets innovation, creating
-        a compelling narrative in the evolving landscape of the digital world.
+        Welcome to my portfolio! I&apos;m Abdun Nayeem Khan, an IT professional with a passion for data science and software development. Currently, I&apos;m pursuing a post-graduate certificate in Information Technology Solutions at Humber College. I have a Bachelor&apos;s degree in Computer Science and Engineering from Islamic University of Technology (IUT).
+        My technical skills include Python, SQL, Node.js, MongoDB, Oracle Data Warehouse, HDFS, Hive, HBase, Spark, Sqoop, Numpy, Pandas, Matplotlib, Scikit-learn, Seaborn, Plotly, Tableau, ETL, Hadoop Ecosystem, ODI, ADW, Git, Firebase, and Zeppelin. I&apos;ve worked on exciting projects like the MLS Match Analysis and Player-Finder, using advanced data processing and visualization techniques. Now, I&apos;m transitioning into cloud computing with AWS, combining it with my data analysis expertise to create innovative solutions. 
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -123,12 +105,18 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Started working at Odin Protections as an Information Technology Analyst (Part-time)
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
           Started the Post-Graduate Certificate Program in Information Technology Solutions at Humber College
         </BioSection>
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Ended working as a Social Media Analyst at Bangladesh Food Safety Authority (BFSA) (Contractual)
+        </BioSection>
+        <BioSection>
+          <BioYear>2024</BioYear>
+          Started Working on a Capstone Project at Humber College
+        </BioSection>
+        
+        
       </Section>
 
       <Section delay={0.3}>
@@ -136,11 +124,7 @@ const Home = () => (
           Interests
         </Heading>
         <Paragraph>
-          Football (Soccer), Fantasy Football,{' '}
-          <Link href="https://neoinfosphere.com/" target="_blank">
-            Web Blogging
-          </Link>
-          , Affiliate Marketing, Social Media Marketing, Data Visualization, Machine Learning, Artificial Intelligence
+          Football (Soccer), Fantasy Football, Social Media Marketing, Data Visualization, Machine Learning, Artificial Intelligence, Cloud Computing
         </Paragraph>
       </Section>
 
@@ -195,22 +179,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://neoinfosphere.com/"
-            title="Neo InfoSphere"
-            thumbnail={thumbYouTube}
-          >
-            My Affiliate Marketing Website
-          </GridItem>
-          <GridItem
-            href="https://nayeem92.github.io/neo-digitron/"
-            title="Neo Digitron"
-            thumbnail={thumbInkdrop}
-          >
-            My Social Media Management Agency
-          </GridItem>
-        </SimpleGrid>
+        
 
         <Heading as="h3" variant="section-title">
           Connect with me

@@ -12,37 +12,34 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="PlayerFinder">
+  <Layout title="Fitness">
     <Container>
       <Title>
-        Tablueau Visualization <Badge>2022-</Badge>
+        Bengali Dataset <Badge>2022-</Badge>
       </Title>
       <P>
-      In this project, I worked with two datasets, and after preprocessing the data to suit my requirements, I
-      generated a set of SQL queries. Using the results obtained from these queries, I created a visualization
-      using Tableaufy player similarity within the English Premier League (EPL).
+      I created a robust Bengali Natural Language Inference (NLI) dataset
+      with 27,000 instances, emphasizing comprehensive coverage. Thorough annotation and documentation were
+      prioritized to ensure data quality. The dataset was benchmarked against leading NLI models, providing valuable
+      insights. I am currently translating these findings into a research paper for future publication, contributing to the
+      academic discourse on Bengali NLI. This was part of my undergraduate thesis
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://public.tableau.com/app/profile/abdun.nayeem.khan/viz/Topforwardhunting-EPL202223season/Dashboard1">
-          Tableau Dashboard <ExternalLinkIcon mx="2px" />
+          <Meta>Dataset</Meta>
+          <Link href="https://www.kaggle.com/datasets/abdunnayeemkhan/third-draft">
+          Kaggle link to dataset<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Microsoft SQL, Tablueau, Excel</span>
+          <span>Excel, Google Sheets</span>
         </ListItem>
-        <ListItem>
-          <Meta>Github</Meta>
-          <Link href="https://github.com/nayeem92/Top-forward-hunting-EPL">
-          Github repository
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
+      
       </List>
 
-      <WorkImage src="/images/works/tab1.png" alt="PlayerFinder" />
+      <WorkImage src="/images/works/nli1.png" alt="PlayerFinder" />
+      <WorkImage src="/images/works/nli2.png" alt="PlayerFinder" />
       {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe
           src="https://www.youtube.com/embed/-qBavwqc_mY"

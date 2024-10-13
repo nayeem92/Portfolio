@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Football Quiz App">
     <Container>
       <Title>
-        Black List <Badge>2021-</Badge>
+        Football Quiz App <Badge>2021-</Badge>
       </Title>
       <P>
         A simple quiz app for football fans. The app is built using Flutter and Dart.
