@@ -3,25 +3,25 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install  # or yarn install, depending on your package manager
+        - npm install  # or yarn install
     build:
       commands:
         - npm run build  # or your specific build command
   artifacts:
-    baseDirectory: build  # Change this to the directory where your built artifacts are located
+    baseDirectory: build  # Change this to where your build artifacts are located
     files:
-      - '**/*'  # Include all files in the artifacts
+      - '**/*'
   cache:
     paths:
-      - node_modules/**  # Cache node_modules for faster builds
+      - node_modules/**
 
 backend:
   phases:
     preBuild:
       commands:
-        - pip install -r requirements.txt  # Install Python dependencies if needed
-        - npm install -g pipenv  # Install pipenv if it’s not already
-        - pipenv install  # Install dependencies in your virtual environment
+        - pip install -r requirements.txt  # Ensure this file exists with your Python dependencies
+        - pip install pipenv  # Install pipenv
     build:
       commands:
+        - pipenv install  # Install dependencies in your virtual environment
         - amplifyPush --simple  # Push backend changes
