@@ -3,31 +3,33 @@ import { Box, Link } from '@chakra-ui/react';
 
 const Footer = () => {
   const [count, setCount] = useState(0);
+  const [incremented, setIncremented] = useState(false); // Flag to prevent double increment
 
-  const incrementCounter = async () => {
+  const updateCounter = async () => {
+    if (incremented) return; // Prevents multiple increments
+
     try {
-      const response = await fetch('https://btiikisp0g.execute-api.ca-central-1.amazonaws.com/dev/counter', {
+      // Increment counter
+      const incrementResponse = await fetch('https://btiikisp0g.execute-api.ca-central-1.amazonaws.com/dev/counter', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
       });
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      // Handle response if needed
-    } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
-    }
-  };
 
-  const getCurrentCount = async () => {
-    try {
-      const response = await fetch('https://btiikisp0g.execute-api.ca-central-1.amazonaws.com/dev/counter');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+      if (!incrementResponse.ok) {
+        throw new Error('Network response was not ok while incrementing');
       }
-      const data = await response.json();
+
+      setIncremented(true); // Set flag to prevent future increments
+
+      // Fetch current count
+      const currentCountResponse = await fetch('https://btiikisp0g.execute-api.ca-central-1.amazonaws.com/dev/counter');
+      if (!currentCountResponse.ok) {
+        throw new Error('Network response was not ok while fetching current count');
+      }
+
+      const data = await currentCountResponse.json();
       setCount(data.count); // Assuming your API returns the count in a JSON format
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
@@ -35,8 +37,7 @@ const Footer = () => {
   };
 
   useEffect(() => {
-    incrementCounter(); // Increment counter on load
-    getCurrentCount(); // Fetch current count on load
+    updateCounter(); // Call updateCounter on load
   }, []);
 
   return (
