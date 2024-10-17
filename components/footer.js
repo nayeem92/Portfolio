@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Box, Link } from '@chakra-ui/react';
 
 const Footer = () => {
   const [count, setCount] = useState(0);
-  const [incremented, setIncremented] = useState(false); // Flag to prevent double increment
+  const incremented = useRef(false); // useRef to persist across renders
 
   const updateCounter = async () => {
-    if (incremented) return; // Prevents multiple increments
+    if (incremented.current) return; // Prevent multiple increments
 
     try {
       // Increment counter
@@ -21,7 +21,7 @@ const Footer = () => {
         throw new Error('Network response was not ok while incrementing');
       }
 
-      setIncremented(true); // Set flag to prevent future increments
+      incremented.current = true; // Set flag to prevent future increments
 
       // Fetch current count
       const currentCountResponse = await fetch('https://btiikisp0g.execute-api.ca-central-1.amazonaws.com/dev/counter');
