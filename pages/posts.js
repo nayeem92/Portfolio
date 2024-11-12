@@ -7,6 +7,7 @@ import thumbPortfolio from '../public/images/works/bfsa.png'
 import thumbHowToUseInkdrop from '../public/images/works/scott.png'
 import thumbFishWorkflow from '../public/images/works/humber.png'
 import thumbMyDeskSetup from '../public/images/works/grad.png'
+import thumbInkdrop from '../public/images/works/pl3.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -17,6 +18,11 @@ const Posts = () => (
 
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <GridItem
+            title="Cloud Deployment post about Player-Finder on AWS"
+            thumbnail={thumbInkdrop}
+            href="https://www.linkedin.com/posts/abdun-nayeem-khan_cloudcomputing-aws-machinelearning-activity-7254333973198188545-REel?utm_source=share&utm_medium=member_desktop"
+          />
           <GridItem
             title="8 months update with BFSA"
             thumbnail={thumbPortfolio}

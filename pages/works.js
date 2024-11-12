@@ -13,6 +13,8 @@ import thumbPichu2 from '../public/images/works/tab1.png'
 import thumbFreeDBTagger from '../public/images/works/football.png'
 import thumbAmembo from '../public/images/works/php1.png'
 import mlsimage from '../public/images/works/mls-match.png';
+import leg from '../public/images/works/leg.png';
+import port from '../public/images/works/port-thumb.jpeg';
 
 
 
@@ -24,6 +26,31 @@ const Works = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+  <WorkGridItem id="cloud-resume-challenge" title="Abdun Nayeem Khan's Cloud-Based Portfolio Backend" thumbnail={port}>
+    A cloud-based backend system for my portfolio website, designed to provide robust functionality and seamless data management using AWS services.
+  </WorkGridItem>
+</Section>
+
+
+
+
+
+      <Section>
+  <WorkGridItem id="leg-system" title="Legislative System Cloud Setup" thumbnail={leg}>
+    A cloud-based deployment of the Legislative System, a web application for managing the legislative process. 
+  </WorkGridItem>
+</Section>
+
+
+
+      <Section>
+          <WorkGridItem id="player-finder-cloud" title="Player Finder Cloud Setup" thumbnail={thumbInkdrop}>
+          A cloud-based application using machine learning clustering for player similarity identification in English Premier League. This project is the cloud setup of the original project.
+          </WorkGridItem>
+        </Section>
+
+
       <Section>
           <WorkGridItem id="mls-match" title="MLS Match Analysis" thumbnail={mlsimage}>
           Dissecting a winning team&apos;;s passing game: Inter Miami vs Toronto FC.
