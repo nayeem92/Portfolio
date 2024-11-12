@@ -14,7 +14,7 @@ def handler(event, context):
     response = table.update_item(
         Key={'id': 'visitor_count'},  # Assuming you have a primary key
         UpdateExpression='ADD visit_count :incr',
-        ExpressionAttributeValues={':incr': 1},
+        ExpressionAttributeValues={':incr': 0.5},
         ReturnValues='UPDATED_NEW'
     )
     
